@@ -13,8 +13,7 @@
 ### 構成
 - CenOS7
 - php7.4
-  - composer
-- mysql8.0
+- mysql5.7
 - apache2.4
 
 ### VirtualBox, Vagrantとは
