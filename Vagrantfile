@@ -13,18 +13,15 @@
   ###
   # HTTPのポートを設定
   ###
-  # config.vm.network "forwarded_port", guest: 80, host: 8800
+  config.vm.network "forwarded_port", guest: 80, host: 8800
   
   ###
   # private_networkを指定するとホストOSからのみアクセスできる
   ###
-  config.vm.network "private_network", id: "default-network", type: "dhcp", ip: "192.168.34.0"
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "private_network", ip: "192.168.33.10"
   
   ###
   # 共有フォルダの設定（VagrantFileのディレクトリと/var/www/htmlを共有）
-  # ※rsyncとmutagen(プラグイン)を使用
-  # 別でmutagen.ymlを作成する
   ###
   # config.disksize.size = '30GB'
   # config.mutagen.orchestrate = true
