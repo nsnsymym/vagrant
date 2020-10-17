@@ -59,4 +59,4 @@ mysql -u root -p${new_password} --connect-expired-password -e "create user $user
 mysql -u root -p${new_password} --connect-expired-password -e "grant all privileges on $database.* to $user@$host_name with grant option"
 
 cd /var/www/html
-composer update
+composer install
